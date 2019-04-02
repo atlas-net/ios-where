@@ -1,0 +1,130 @@
+/*
+  Localizable.strings
+  Atlas
+
+  Created by Benjamin Lefebvre on 10/14/15.
+  Copyright © 2015 Atlas. All rights reserved.
+*/
+
+
+/**
+ * Chinese translation
+ */
+
+
+// Labels
+
+"Send SMS" = "获取验证码";
+"Register" = "注册";
+"Please choose at most 3 tribes, you will be able to change it in your profile" = "请选择最多3个族群，以后您可以随时进行更改";
+"Select the tribes where you want to publish" =  "选择发布到以下哪个族群";
+"Nickname" = "昵称";
+"Introduction" = "简介";
+"Required" = "必选";
+"Option" = "可选";
+
+
+// Alerts
+
+"Incorrect phone number" = "错误的手机号码";
+"Please check your phone number and try again" = "请核对手机号码再试一次";
+
+"Empty field" = "必填项目";
+
+"Incorrect phone number length" = "号码长度错误";
+"Your phone number should have 11 digits" = "请输入11位数手机号码";
+
+"No phone number" = "未填手机号码";
+"Please enter your phone number" = "请输入您的手机号码";
+
+"No SMS Code" = "未填写短信验证码";
+"Please write the code you received by SMS" = "请填写短信收到的验证码";
+
+"Network error" = "未连接网络";
+"Please check your network settings and try again" = "请核对网络设置再试一次";
+
+"Wrong SMS Code" = "验证码错误";
+"The SMS code is incorrect. Please check the SMS you received" = "短信验证码错误，请查看您收到的短信";
+
+"Tribe picking limit" = "相册";
+"Please pick up to 3 tribes" = "最多3个族群";
+
+"OK" = "明白";
+"Apply" = "确定";
+
+//new add
+"Verification code" = "验证码";
+"Phone Number" = "手机号";
+"Write something" = "写点什么...";
+"More" = "更多";
+"Close" = "收起";
+"Setting" = "设置";
+"Cancle" = "取消";
+"Like" = "喜欢";
+"Personal information" = "个人信息";
+"unsubscribe" = "取消关注";
+"remind" = "提醒";
+"Sure" = "确定";
+"Successfully" = "上传成功";
+"Update background image" = "更新背景图像";
+"Save" = "保存";
+"Change your avatar" = "更改头像";
+"Change background" = "更改背景";
+"Edit" = "编辑";
+"Delete" = "删除";
+"Personal settings" = "个人设置";
+"System settings" = "系统设置";
+"Support" = "支持";
+"About" = "关于";
+"Contact us" = "联系我们";
+"Privacy Policy and Terms of Service" = "隐私政策与服务条款";
+"Contact Atlas" = "联系Atlas";
+"Logout" = "退出";
+"Clear cache" = "清除缓存";
+"Are you sure you want to clear the cache?" = "确定要清除缓存吗?";
+"Message notification" = "消息提醒";
+"AD Cooperation" = "广告合作";
+"Domestic short holiday/hotel" = "国内短假/酒店";
+"Outbound tourism" = "出境旅游";
+"Liked" = "获赞";
+"Comment" = "评论";
+"Attention" = "关注";
+"Location dynamics" = "地点动态";
+"Recommend" = "推荐";
+"Notice" = "通知";
+"Activity" = "活动";
+"Updated" = "更新";
+"Dynamic" = "动态";
+"Location" = "地点";
+"Recommended" = "好友推荐";
+"Wechat friends" = "微信好友";
+"Moment" = "朋友圈";
+"Location current" = "所在位置";
+"Create" = "创建";
+"Give up" = "放弃";
+"Choose category" = "选择分类";
+"Back" = "返回";
+"Please select one to two categories" = "请选择一到两个类别";
+"Go to" = "前往";
+"Tips" = "温馨提示";
+"You have unposted updates. Do you want to continue editing?" = "您有未上传的动态，是否要继续编辑呢？";
+"Add tag..." = "添加标签...";
+"Camera Roll" = "相机胶卷";
+"No result" = "无结果";
+"All" = "全部";
+"Search" = "搜索";
+"Popular searches" = "热门搜索";
+"The current location was detected" = "检测到当前地理位置是";
+"Whether to switch to the current city" = "是否切换到当前城市";
+"Have you detected a change in your city and switched to the current city?" = "检测到您所在城市发生变化，是否切换到当前城市？";
+"Destination" = "目的地";
+"Search history" = "搜索历史";
+"Load timeout" = "加载超时";
+"Loading timed out, please try again" = "加载超时，请重试";
+"Successful comment" = "评论成功";
+
+
+
+
+
+

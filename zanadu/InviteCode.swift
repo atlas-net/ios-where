@@ -1,0 +1,29 @@
+//
+//  InviteCode.swift
+//  Atlas
+//
+//  Created by yingyang on 16/4/26.
+//  Copyright © 2016年 Atlas. All rights reserved.
+//
+
+
+/**
+ Invite
+ */
+class InviteCode: AVObject, AVSubclassing {
+    
+    // MARK: - Properties
+    @NSManaged
+    var code: String?
+    @NSManaged
+    var expired: Date?
+    @NSManaged
+    var isUsed:NSNumber?
+    //MARK: - Methods
+    
+    
+    //MARK: - AVSublassing Methods
+    class func parseClassName() -> String! {
+        return "InviteCode"
+    }
+}

@@ -1,0 +1,25 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'zanadu’ do
+pod 'IQKeyboardManagerSwift'
+pod 'Alamofire', '~> 4.0'
+pod 'AlamofireImage', '~> 3.1'
+pod 'SwiftyJSON'
+pod 'SwiftLocation'
+pod 'XCGLogger', '~> 4.0.0'
+pod 'Cartography', '~> 1.1.0'
+pod 'TagListView', '~> 1.2.0'
+pod 'DeviceKit', '~> 1.0'
+pod 'SnapKit', '~> 3.0'
+pod 'Weixin'
+pod 'AFNetworking'
+pod 'EAIntroView', '2.9.0'
+pod 'FTIAutomaticKeyboardAdjustment'
+pod 'Fabric'
+pod 'Crashlytics'
+pod 'MBProgressHUD', '~> 1.0.0'
+pod 'MJRefresh', '= 3.1.15'
+pod 'SDWebImage', '~>3.8'
+end

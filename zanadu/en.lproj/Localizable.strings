@@ -1,0 +1,127 @@
+/*
+  Localizable.strings
+  Atlas
+
+  Created by Benjamin Lefebvre on 10/14/15.
+  Copyright © 2015 Atlas. All rights reserved.
+*/
+
+
+/**
+ * Chinese translation
+ */
+
+
+// Labels
+
+"Send SMS" = "Send SMS";
+"Register" = "Register";
+"Please choose at most 3 tribes, you will be able to change it in your profile" = "Please choose at most 3 tribes, you will be able to change it in your profile";
+"Select the tribes where you want to publish" =  "Select the tribes where you want to publish";
+"Nickname" = "Nickname";
+"Introduction" = "Introduction";
+"Required" = "Required";
+"Option" = "Option";
+
+
+// Alerts
+
+"Incorrect phone number" = "Incorrect phone number";
+"Please check your phone number and try again" = "Please check your phone number and try again";
+
+"Empty field" = "Empty field";
+
+"Incorrect phone number length" = "Incorrect phone number length";
+"Your phone number should have 11 digits" = "Your phone number should have 11 digits";
+
+"No phone number" = "No phone number";
+"Please enter your phone number" = "Please enter your phone number";
+
+"No SMS Code" = "No SMS Code";
+"Please write the code you received by SMS" = "Please write the code you received by SMS";
+
+"Network error" = "Network error";
+"Please check your network settings and try again" = "Please check your network settings and try again";
+
+"Wrong SMS Code" = "Wrong SMS Code";
+"The SMS code is incorrect. Please check the SMS you received" = "The SMS code is incorrect. Please check the SMS you received";
+
+"Tribe picking limit" = "Tribe picking limit";
+"Please pick up to 3 tribes" = "Please pick up to 3 tribes";
+
+"OK" = "OK";
+"Apply" = "Apply";
+
+//new add
+"Verification code" = "code";
+"Phone Number" = "Phone Number";
+"Write something" = "Write something...";
+"More" = "more";
+"Close" = "Close";
+"Setting" = "Setting";
+"Cancle" = "Cancle";
+"Like" = "Like";
+"Personal information" = "Personal information";
+"unsubscribe" = "unsubscribe";
+"remind" = "Remind";
+"Sure" = "Sure";
+"Successfully" = "Successfully";
+"Update background image" = "Update background image";
+"Save" = "Save";
+"Change your avatar" = "Change your avatar";
+"Change background" = "Change background";
+"Edit" = "Edit";
+"Delete" = "Delete";
+"Personal settings" = "Personal settings";
+"System settings" = "System settings";
+"Support" = "Support";
+"About" = "About";
+"Contact us" = "Contact us";
+"Privacy Policy and Terms of Service" = "Privacy Policy and Terms of Service";
+"Contact Atlas" = "Contact Atlas";
+"Logout" = "Logout";
+"Clear cache" = "Clear cache";
+"Are you sure you want to clear the cache?" = "Are you sure you want to clear the cache?";
+"Message notification" = "Message notification";
+"AD Cooperation" = "AD Cooperation";
+"Domestic short holiday/hotel" = "Domestic short holiday/hotel";
+"Outbound tourism" = "Outbound tourism";
+"Liked" = "Liked";
+"Comment" = "Comment";
+"Attention" = "Attention";
+"Location dynamics" = "Location dynamics";
+"Recommend" = "Recommend";
+"Notice" = "Notice";
+"Activity" = "Activity";
+"Updated" = "Updated";
+"Dynamic" = "Trends";
+"Location" = "Location";
+"Recommended" = "Recommended";
+"Wechat friends" = "Friends";
+"Moment" = "Moment";
+"Location current" = "Location";
+"Create" = "Create";
+"Give up" = "Back";
+"Choose category" = "Choose category";
+"Back" = "Back";
+"Please select one to two categories" = "Please select one to two categories";
+"Go to" = "Go to";
+"Tips" = "Tips";
+"You have unposted updates. Do you want to continue editing?" = "You have unposted updates. Do you want to continue editing?";
+"Add tag..." = "Add tag...";
+"Camera Roll" = "Camera Roll";
+"No result" = "No results";
+"All" = "All";
+"Search" = "Search";
+"Popular searches" = "Popular searches";
+"The current location was detected" = "The current location was detected";
+"Whether to switch to the current city" = "whether to switch to the current city";
+"Have you detected a change in your city and switched to the current city?" = "Have you detected a change in your city and switched to the current city?";
+"Destination" = "Destination";
+"Search history" = "Search history";
+"Load timeout" = "Load timeout";
+"Loading timed out, please try again" = "Loading timed out, please try again";
+"Successful comment" = "Successful comment";
+
+
+

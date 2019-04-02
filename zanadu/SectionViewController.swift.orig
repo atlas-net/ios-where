@@ -1,0 +1,164 @@
+//
+//  SectionViewController.swift
+//  zanadu
+//
+//  Created by Benjamin Lefebvre on 7/28/15.
+//  Copyright (c) 2015 zanadu. All rights reserved.
+//
+
+/**
+SectionViewController
+
+Display a section's list of recommendations
+*/
+class SectionViewController : BaseRecommendationTableViewController {
+
+    var section: Section?
+    var sectionItems = [SectionItem]()
+    var loadingV = LoadingView()
+    
+<<<<<<< mine
+=======
+    func onSearchButtonTapped(sender:AnyObject) {
+        log.info("SearchButtonTapped : \(sender)")
+        let query =  DataQueryProvider.categoryQuery()
+        query.findObjectsInBackgroundWithBlock { (objects:[AnyObject]!, error) in
+            if error != nil {
+                log.error(error.localizedDescription)
+            }else{
+                let vc = self.storyboard?.instantiateViewControllerWithIdentifier("GlobalSearchViewController") as! GlobalSearchViewController
+                vc.rootImage = self.view.screenViewShots()
+                let vcs = self.navigationController?.viewControllers
+                if vcs?.count > 2{
+                    return
+                }
+                self.navigationController?.pushViewController(vc, animated: true)
+                vc.categoryArray = (objects as? [Category])!
+            }
+        }
+    }
+>>>>>>> theirs
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = Config.Colors.TagFieldBackground
+        self.addLoadingView()
+        guard let section = self.section else{return}
+        section.limit = nil
+        self.navigationItem.title = self.section!.title ?? ""
+        fetchData()
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+       self.navigationController?.navigationBar.frame.size.height = Config.AppConf.navigationBarHeight
+    }
+    
+   func addLoadingView(){
+            self.loadingV.frame = CGRectMake(0, 0,UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height)
+            self.view.addSubview(self.loadingV)
+    }
+    
+    
+    override func fetchData(){
+        guard let section = self.section else{return}
+        
+        let recommendationQuery = DataQueryProvider.historyRecommendationForSection(section, latestDate:nil , oldestDate:nil )
+        
+        recommendationQuery.executeInBackground { (objects:[AnyObject]!, error) in
+            self.loadingV.removeFromSuperview()
+            self.tableView.mj_footer.endRefreshing()
+            self.tableView.mj_header.endRefreshing()
+        if error != nil{
+            self.showBasicAlertWithTitle("网络加载错误")
+        }else{
+            
+            for obj in objects {
+                if let sectionItem = obj as? SectionItem{
+                    self.recommendations.append(sectionItem.recommendation!)
+                    self.sectionItems.append(sectionItem)
+                }
+            }
+            if self.recommendations.count > 0{
+                self.hideEmptyStreamLabel()
+                self.lastestDate = self.sectionItems.first!.createdAt
+                self.oldestDate = self.sectionItems.last!.createdAt
+                self.tableView.reloadData()
+            }else{
+               self.showEmptyStreamLabel()
+            }
+           
+        }
+        }
+    }
+    
+    
+    override func fetchDataWithLatestDate(latestDate:NSDate){
+        guard let section = self.section else{return}
+        
+        let recommendationQuery = DataQueryProvider.historyRecommendationForSection(section, latestDate:latestDate , oldestDate:nil )
+        
+        recommendationQuery.executeInBackground { (objects:[AnyObject]!, error) in
+            self.loadingV.removeFromSuperview()
+            self.tableView.mj_footer.endRefreshing()
+            self.tableView.mj_header.endRefreshing()
+            if error != nil{
+                self.showBasicAlertWithTitle("网络加载错误")
+            }else{
+                var recommendationArray = [Recommendation]()
+                var  sectionItemArray = [SectionItem]()
+                for obj in objects {
+                    if let sectionItem = obj as? SectionItem{
+                        recommendationArray.append(sectionItem.recommendation!)
+                        sectionItemArray.append(sectionItem)
+                    }
+                }
+                if recommendationArray.count > 0{
+                    recommendationArray += self.recommendations
+                    self.recommendations = recommendationArray
+                    sectionItemArray += self.sectionItems
+                    self.sectionItems = sectionItemArray
+                }
+                
+                if self.recommendations.count > 0{
+                    self.hideEmptyStreamLabel()
+                    self.lastestDate = self.sectionItems.first!.createdAt
+                    self.oldestDate = self.sectionItems.last!.createdAt
+                    self.tableView.reloadData()
+                }else{
+                    self.showEmptyStreamLabel()
+                }
+                
+            }
+        }
+    }
+    
+    override func fetchDataWithOldestDate(oldestDate:NSDate){
+        guard let section = self.section else{return}
+         let recommendationQuery = DataQueryProvider.historyRecommendationForSection(section, latestDate:nil , oldestDate:oldestDate )
+        recommendationQuery.executeInBackground { (objects:[AnyObject]!, error) in
+            self.loadingV.removeFromSuperview()
+            self.tableView.mj_footer.endRefreshing()
+            self.tableView.mj_header.endRefreshing()
+            if error != nil{
+                self.showBasicAlertWithTitle("网络加载错误")
+            }else{
+                for obj in objects {
+                    if let sectionItem = obj as? SectionItem{
+                        self.recommendations.append(sectionItem.recommendation!)
+                        self.sectionItems.append(sectionItem)
+                    }
+                }
+                if self.recommendations.count > 0{
+                    self.hideEmptyStreamLabel()
+                    self.lastestDate = self.sectionItems.first!.createdAt
+                    self.oldestDate = self.sectionItems.last!.createdAt
+                    self.tableView.reloadData()
+                }else{
+                    self.showEmptyStreamLabel()
+                }
+                
+            }
+        }
+    }
+    
+}

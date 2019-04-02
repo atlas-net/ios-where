@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ListItemView" id="iN0-l3-epB" customClass="ListItemView" customModule="Where" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kz5-TB-gKu">
+                    <rect key="frame" x="8" y="3" width="307" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2Ga-zb-25q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txH-Id-Tv4" userLabel="Slideshow" customClass="LGSublimationView">
+                    <rect key="frame" x="0.0" y="51" width="600" height="375"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="txH-Id-Tv4" secondAttribute="height" multiplier="16:10" id="1TP-RE-7EO"/>
+                        <constraint firstAttribute="height" constant="375" id="CMr-5T-dCZ"/>
+                        <constraint firstAttribute="width" constant="600" id="oNs-ky-iVU"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="effectCover398" translatesAutoresizingMaskIntoConstraints="NO" id="g1s-VP-mjU">
+                    <rect key="frame" x="0.0" y="51" width="600" height="375"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="600" id="bza-LL-NL0"/>
+                        <constraint firstAttribute="height" constant="375" id="u4F-AU-b6I"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="bza-LL-NL0"/>
+                            <exclude reference="u4F-AU-b6I"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xG-OX-4Uc">
+                    <rect key="frame" x="8" y="434" width="359" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.84705882352941175" green="0.83921568627450982" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="venueIcon" translatesAutoresizingMaskIntoConstraints="NO" id="fXp-yo-y2h">
+                    <rect key="frame" x="338" y="10" width="27" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="W3S-Sa-ckA"/>
+                        <constraint firstAttribute="width" constant="27" id="hrg-kK-cnK"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="g1s-VP-mjU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0oh-I6-obD"/>
+                <constraint firstItem="8xG-OX-4Uc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="2Mz-1L-Hjd"/>
+                <constraint firstItem="g1s-VP-mjU" firstAttribute="trailing" secondItem="txH-Id-Tv4" secondAttribute="trailing" id="4kT-fZ-xWO"/>
+                <constraint firstItem="g1s-VP-mjU" firstAttribute="height" secondItem="txH-Id-Tv4" secondAttribute="height" id="4qa-RQ-5ZN"/>
+                <constraint firstItem="kz5-TB-gKu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="BBG-Ev-cr7"/>
+                <constraint firstItem="8xG-OX-4Uc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kz5-TB-gKu" secondAttribute="bottom" constant="8" id="JJf-VN-GC6"/>
+                <constraint firstAttribute="trailing" secondItem="txH-Id-Tv4" secondAttribute="trailing" id="LfK-de-oup"/>
+                <constraint firstItem="g1s-VP-mjU" firstAttribute="bottom" secondItem="txH-Id-Tv4" secondAttribute="bottom" id="NcL-eW-jlx"/>
+                <constraint firstItem="txH-Id-Tv4" firstAttribute="top" secondItem="kz5-TB-gKu" secondAttribute="bottom" constant="8" id="OPA-EW-4Vq"/>
+                <constraint firstAttribute="trailing" secondItem="8xG-OX-4Uc" secondAttribute="trailing" constant="8" id="Pq6-ST-GW7"/>
+                <constraint firstItem="g1s-VP-mjU" firstAttribute="top" secondItem="txH-Id-Tv4" secondAttribute="top" id="QIs-xs-Wil"/>
+                <constraint firstAttribute="trailing" secondItem="fXp-yo-y2h" secondAttribute="trailing" constant="10" id="ShT-UI-cHu"/>
+                <constraint firstItem="8xG-OX-4Uc" firstAttribute="top" secondItem="txH-Id-Tv4" secondAttribute="bottom" constant="8" id="Svh-Wx-0QP"/>
+                <constraint firstAttribute="trailing" secondItem="kz5-TB-gKu" secondAttribute="trailing" constant="60" id="WLh-gA-wDi"/>
+                <constraint firstItem="g1s-VP-mjU" firstAttribute="centerY" secondItem="txH-Id-Tv4" secondAttribute="centerY" id="Wge-Fp-sIq"/>
+                <constraint firstItem="fXp-yo-y2h" firstAttribute="centerY" secondItem="kz5-TB-gKu" secondAttribute="centerY" id="Xvh-mf-3Dk"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8xG-OX-4Uc" secondAttribute="bottom" constant="3" id="Ymb-CG-uVS"/>
+                <constraint firstItem="g1s-VP-mjU" firstAttribute="centerX" secondItem="txH-Id-Tv4" secondAttribute="centerX" id="bCX-Nr-ETB"/>
+                <constraint firstItem="txH-Id-Tv4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bcH-K1-6T3"/>
+                <constraint firstItem="kz5-TB-gKu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="gL9-b6-H4Q"/>
+                <constraint firstItem="8xG-OX-4Uc" firstAttribute="top" relation="lessThanOrEqual" secondItem="kz5-TB-gKu" secondAttribute="bottom" priority="750" constant="8" id="j03-IF-QKh"/>
+                <constraint firstItem="g1s-VP-mjU" firstAttribute="leading" secondItem="txH-Id-Tv4" secondAttribute="leading" id="jwY-xR-7Pn"/>
+                <constraint firstItem="fXp-yo-y2h" firstAttribute="top" secondItem="kz5-TB-gKu" secondAttribute="top" constant="7" id="mT5-ei-pcw"/>
+                <constraint firstItem="g1s-VP-mjU" firstAttribute="top" secondItem="kz5-TB-gKu" secondAttribute="bottom" constant="8" id="znd-aU-FSc"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0oh-I6-obD"/>
+                    <exclude reference="4qa-RQ-5ZN"/>
+                    <exclude reference="Wge-Fp-sIq"/>
+                    <exclude reference="bCX-Nr-ETB"/>
+                    <exclude reference="znd-aU-FSc"/>
+                    <exclude reference="Xvh-mf-3Dk"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="coverImage" destination="g1s-VP-mjU" id="h1u-jy-VHU"/>
+                <outlet property="descriptionLabel" destination="8xG-OX-4Uc" id="JSY-qc-GU4"/>
+                <outlet property="slideshowView" destination="txH-Id-Tv4" id="tso-qP-O4K"/>
+                <outlet property="titleLabel" destination="kz5-TB-gKu" id="noG-AM-GKa"/>
+                <outlet property="venueImgView" destination="fXp-yo-y2h" id="xWz-6D-DgO"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="effectCover398" width="199" height="97"/>
+        <image name="venueIcon" width="25" height="36"/>
+    </resources>
+</document>
